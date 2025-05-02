@@ -3,7 +3,7 @@ CREATE SCHEMA `sales_database`
 
 use sales_database;
 
-CREATE TABLE `sales` (
+CREATE TABLE IF NOT EXISTS `sales` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `product` VARCHAR(255) NOT NULL,
   `price` DECIMAL(16,2) NOT NULL DEFAULT 0,
