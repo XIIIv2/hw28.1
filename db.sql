@@ -1,4 +1,5 @@
 CREATE SCHEMA `sales_database`
+    IF NOT EXISTS
     DEFAULT CHARACTER SET utf8;
 
 use sales_database;
