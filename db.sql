@@ -30,7 +30,7 @@ FROM `sales`
 ORDER BY id ASC
 LIMIT 2;
 
-SELECT SUM(price * quantity) AS totalPrice
+SELECT SUM(price) AS totalPrice
 FROM `sales`;
 
 SELECT product,
