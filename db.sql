@@ -23,6 +23,12 @@ SELECT *
 FROM `sales`
 LIMIT 2;
 
+--- тоже выборка первых двух записей, но с явной сортировкой по id
+SELECT * 
+FROM `sales`
+ORDER BY id ASC
+LIMIT 2;
+
 SELECT SUM(price * quantity)
 AS totalPrice
 FROM `sales`;
