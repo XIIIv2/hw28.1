@@ -30,12 +30,11 @@ FROM `sales`
 ORDER BY id ASC
 LIMIT 2;
 
-SELECT SUM(price * quantity)
-AS totalPrice
+SELECT SUM(price * quantity) AS totalPrice
 FROM `sales`;
 
 SELECT product,
 	SUM(quantity) AS totalQuantity,
-	AVG(price / quantity) AS avgPrice
+	ROUND(AVG(price / quantity), 2) AS avgPrice
 FROM `sales`
 GROUP BY product;
